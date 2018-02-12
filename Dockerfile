@@ -11,5 +11,5 @@ RUN apt-get update && \
         ca-certificates && \
     easy_install pip && \
     pip install --upgrade pip && \
-    pip install ansible boto3 && \
+    pip install ansible boto3 boto && \
     pip install git+https://github.com/metacloud/molecule.git@2.8.2
