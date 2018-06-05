@@ -12,4 +12,4 @@ RUN apt-get update && \
     easy_install pip && \
     pip install --upgrade pip && \
     pip install 'ansible>=2.4,<2.5' boto3 boto dnsimple pyOpenSSL && \
-    pip install git+https://github.com/metacloud/molecule.git@2.10.1
+    pip install git+https://github.com/metacloud/molecule.git@2.14.0
