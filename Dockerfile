@@ -4,6 +4,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
         git \
+        putty-tools \
         build-essential \
         python-minimal \
         python-setuptools \
