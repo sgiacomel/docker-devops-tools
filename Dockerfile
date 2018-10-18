@@ -20,4 +20,8 @@ RUN apt-get update && \
     wget --quiet https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip && \
     unzip terraform_0.11.7_linux_amd64.zip && \
     mv ./terraform /usr/local/bin/ && \
-    rm terraform_0.11.7_linux_amd64.zip
+    rm terraform_0.11.7_linux_amd64.zip && \
+    wget --quiet https://releases.hashicorp.com/packer/1.3.1/packer_1.3.1_linux_amd64.zip && \
+    unzip packer_1.3.1_linux_amd64.zip && \
+    mv ./packer /usr/local/bin/ && \
+    rm packer_1.3.1_linux_amd64.zip
