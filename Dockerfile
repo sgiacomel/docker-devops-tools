@@ -24,4 +24,4 @@ RUN apt-get update && \
     wget --quiet https://releases.hashicorp.com/packer/1.3.3/packer_1.3.3_linux_amd64.zip && \
     unzip packer_1.3.3_linux_amd64.zip && \
     mv ./packer /usr/local/bin/ && \
-    rm packer_1.3.3_linux_amd64.zip
+    rm packer_1.3.2_linux_amd64.zip
