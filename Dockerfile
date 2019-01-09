@@ -21,7 +21,7 @@ RUN apt-get update && \
     unzip terraform_0.11.11_linux_amd64.zip && \
     mv ./terraform /usr/local/bin/ && \
     rm terraform_0.11.11_linux_amd64.zip && \
-    wget --quiet https://releases.hashicorp.com/packer/1.3.3/packer_1.3.3_linux_amd64.zip && \
-    unzip packer_1.3.3_linux_amd64.zip && \
+    wget --quiet https://releases.hashicorp.com/packer/1.3.2/packer_1.3.2_linux_amd64.zip && \
+    unzip packer_1.3.2_linux_amd64.zip && \
     mv ./packer /usr/local/bin/ && \
     rm packer_1.3.2_linux_amd64.zip
