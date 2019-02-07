@@ -14,7 +14,7 @@ RUN apt-get update && \
         ca-certificates && \
     easy_install pip && \
     pip install --upgrade pip && \
-    pip install 'ansible>=2.7,<2.8' boto3 boto dnsimple pyOpenSSL awscli && \
+    pip install 'ansible>=2.7,<2.8' netaddr boto3 boto dnsimple pyOpenSSL awscli && \
     pip install git+https://github.com/ansible/molecule.git@2.19 && \
     cd $TMPDIR && \
     wget --quiet https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip && \
