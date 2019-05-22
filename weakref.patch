@@ -1,0 +1,8 @@
+109c109
+<         def remove(wr, selfref=ref(self)):
+---
+>         def remove(wr, selfref=ref(self), _atomic_removal=_remove_dead_weakref):
+117c117
+<                     _remove_dead_weakref(d, wr.key)
+---
+>                     _atomic_removal(d, wr.key)

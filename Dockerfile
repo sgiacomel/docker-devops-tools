@@ -28,3 +28,7 @@ RUN apt-get update && \
     unzip packer_1.3.5_linux_amd64.zip && \
     mv ./packer /usr/local/bin/ && \
     rm packer_1.3.5_linux_amd64.zip
+
+ADD weakref.patch /tmp/weakref.patch
+
+RUN patch /usr/lib/python3.5/weakref.py < /tmp/weakref.patch 
